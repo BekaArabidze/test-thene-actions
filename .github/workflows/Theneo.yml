@@ -20,5 +20,5 @@ jobs:
         with:
           PATH: doc/4.json
           PROJECT_KEY: aa98a56c-e011-464e-8999-d4cd516b54c8
-          SECRET: TEST_API_KEY
+          SECRET: ${{TEST_API_KEY}}
 
