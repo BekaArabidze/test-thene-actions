@@ -19,6 +19,6 @@ jobs:
         uses: Theneo-Inc/api-documentation@1.0
         with:
           PATH: doc/4.json
-          PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
-          SECRET: ${{ secrets.TEST_API_KEY }}
+          PROJECT_KEY: testbeqakey
+          SECRET: secret
 
