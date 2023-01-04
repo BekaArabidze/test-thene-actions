@@ -1,6 +1,6 @@
 name: Theneo API Documentation
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
@@ -19,6 +19,6 @@ jobs:
         uses: theneoAPIDoc/api-documentation@main
         with:
           PATH: doc/4.json
-          PROJECT_KEY: "aa98a56c-e011-464e-8999-d4cd516b54c8"
-          SECRET: secret
+          PROJECT_KEY: aa98a56c-e011-464e-8999-d4cd516b54c8
+          SECRET: ${{ secrets.TEST_API_KEY }}
 
