@@ -1,6 +1,6 @@
 name: Theneo API Documentation
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
