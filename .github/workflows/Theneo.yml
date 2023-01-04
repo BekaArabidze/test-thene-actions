@@ -20,5 +20,5 @@ jobs:
         with:
           PATH: "doc/4.json"
           PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
-          SECRET: ${{ secrets.TEST_API_KEY }}
+          SECRET: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDow8YbHseyU0qKLOsWD4ipWJk2UbBHupn+ZYSuy6Z+UgSUrcSc0QHv6d+DGDew7CPw+fwcCpgLX112t0pmGi5MYnJH2OGhDw3sz0i0wpMiBDIaf58+s5aCbKyqpoLy+Id6+7xeiTIVzrvHO10yxVx2yWNK7iETiEL9yLyf94woCjJOGkAh/UVz+93rY+3j+z/CWJsUHLDVOUYwnSCcbokB7cxEj19l3rSbqNgPw399eyxrOI1Xdzx+WqTf4olUbIfqtOV3LaD2P8sKfbY03xRcydIakrh1/MgdVqrXQxQtIBW2q7f8Y5jB0pgT0Ju0IGdiHmOF91pB5DYGhqS41RIlf//niIWSaNz6YZ0p+pS+11Xpsg9oP4ldP1pLoRTrz0f7hHYKr4+fZYJKZ3Xj6O3E4JlF9VCFKMeBNYSjtaJ7f6vwQVvyr5iy6188i8xUO4VCoXoz/O+L4uhy3Xtr4PR+7WPtKs/Jy7Gs7g2SlyMZdh54eFqdqsT8auNnSEq6EkMxbE9cpTeAM63OQs4G4nM72+BB+IRuPDb35iwwBvuYqlAeJsTZKIJOk3k56Z/9HPU7MLI9wvkIYcOqtUwOwuZTULMgFdTOG+QQ+zoWYNFmu+LCmqh5hopxWdHRGUOLCVK41VwejtyydjT9I7ze4ADeXqK/b6xHlBPayeuo8dKfmQ== arabson1998@gmail.com
 
