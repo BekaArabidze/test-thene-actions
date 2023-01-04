@@ -18,7 +18,7 @@ jobs:
       - name: process documentation on server
         uses: theneoAPIDoc/api-documentation@main
         with:
-          PATH: ../../doc/api.yml
+          PATH: doc/4.json
           PROJECT_KEY: aa98a56c-e011-464e-8999-d4cd516b54c8
           SECRET: secret
 
