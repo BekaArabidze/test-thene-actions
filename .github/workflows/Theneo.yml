@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - name: process documentation on server
-        uses: theneoAPIDoc/api-documentation@main
+      - name: Theneo API Documentation
+        uses: Theneo-Inc/api-documentation@1.0
         with:
-          PATH: "doc/api.yml"
+          PATH: "../../doc/api.yml"
           PROJECT_KEY: "aa98a56c-e011-464e-8999-d4cd516b54c8"
           SECRET: "secret"
   
