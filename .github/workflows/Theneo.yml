@@ -21,5 +21,4 @@ jobs:
           PATH: doc/4.json
           PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
           SECRET: ${{ secrets.SECRET }}
-          DOCUMENT_KEY: ${{ secrets.DOCUMENT_KEY }}
 
