@@ -19,6 +19,6 @@ jobs:
         uses: Theneo-Inc/api-documentation@1.0
         with:
           PATH: doc/4.json
-          PROJECT_KEY: aa98a56c-e011-464e-8999-d4cd516b54c8
-          SECRET: MartisMamali98
+          PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
+          SECRET: ${{ secrets.TEST_API_KEY_NEW }}
 
