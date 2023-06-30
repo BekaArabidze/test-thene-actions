@@ -1,6 +1,6 @@
-name: Theneo API Documentation
+name: Update documention
 on:
-  push:
+  pull_request:
     branches:
       - main
 jobs:
@@ -14,11 +14,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-            node-version: "16"
-      - name: Theneo API Documentation
-        uses: Theneo-Inc/api-documentation@1.0
+          node-version: "16"
+      - name: process documentation on server
+        uses: theneoAPIDoc/api-documentation@main
         with:
-          PATH: doc/4.json
-          PROJECT_KEY: "BekaArabidze/test-thene-actions"
-          SECRET: ${{ secrets.SECRET }}
-
+          PATH: 1.yaml
+          PROJECT_KEY: ragaca
+          SECRET: 4a2d06e7-8b5a-4b7e-b5e7-81394c25d6d9
