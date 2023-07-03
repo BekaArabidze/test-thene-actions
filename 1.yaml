@@ -10,7 +10,7 @@ paths:
   /{clientId}/Tags/{tagName}:
     delete:
       tags:
-        - test_actions
+        - test_github_actions
       operationId: Config_DeleteTags
       consumes: []
       produces: []
