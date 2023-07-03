@@ -1,4 +1,4 @@
-swagger: '2.0'
+swagger: "2.0"
 info:
   version: v1
   title: Profiles
@@ -10,7 +10,7 @@ paths:
   /{clientId}/Tags/{tagName}:
     delete:
       tags:
-        - bewwa
+        - beshqena
       operationId: Config_DeleteTags
       consumes: []
       produces: []
@@ -29,7 +29,7 @@ paths:
           required: true
           type: string
       responses:
-        '204':
+        "204":
           description: No Content
   /{clientId}/AddressTypes:
     get:
@@ -63,10 +63,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AddressTypeEntryList'
+            $ref: "#/definitions/AddressTypeEntryList"
     post:
       tags:
         - Config
@@ -93,17 +93,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/AddressTypeEntryList'
+            $ref: "#/definitions/AddressTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AddressTypeEntryList'
+            $ref: "#/definitions/AddressTypeEntryList"
   /{clientId}/AlternateIdTypes:
     get:
       tags:
@@ -136,10 +136,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AlternateIdTypeEntryList'
+            $ref: "#/definitions/AlternateIdTypeEntryList"
     post:
       tags:
         - Config
@@ -166,17 +166,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/AlternateIdTypeEntryList'
+            $ref: "#/definitions/AlternateIdTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AlternateIdTypeEntryList'
+            $ref: "#/definitions/AlternateIdTypeEntryList"
   /{clientId}/ConsentStatus:
     get:
       tags:
@@ -200,10 +200,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/ConsentStatusList'
+            $ref: "#/definitions/ConsentStatusList"
   /{clientId}/ConsentTypes:
     get:
       tags:
@@ -240,10 +240,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/ConsentTypeEntryList'
+            $ref: "#/definitions/ConsentTypeEntryList"
     post:
       tags:
         - Config
@@ -270,17 +270,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/ConsentTypeEntryList'
+            $ref: "#/definitions/ConsentTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/ConsentTypeEntryList'
+            $ref: "#/definitions/ConsentTypeEntryList"
   /{clientId}/CustomerTypes:
     get:
       tags:
@@ -313,10 +313,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomerTypeEntryList'
+            $ref: "#/definitions/CustomerTypeEntryList"
     post:
       tags:
         - Config
@@ -343,17 +343,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/CustomerTypeEntryList'
+            $ref: "#/definitions/CustomerTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomerTypeEntryList'
+            $ref: "#/definitions/CustomerTypeEntryList"
   /{clientId}/CustomFields:
     get:
       tags:
@@ -386,10 +386,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFields'
+            $ref: "#/definitions/CustomFields"
   /{clientId}/CustomFields/DateTime:
     get:
       tags:
@@ -422,10 +422,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldDateTimeList'
+            $ref: "#/definitions/CustomFieldDateTimeList"
     post:
       tags:
         - Config
@@ -452,17 +452,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/CustomFieldDateTimeList'
+            $ref: "#/definitions/CustomFieldDateTimeList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldDateTimeList'
+            $ref: "#/definitions/CustomFieldDateTimeList"
   /{clientId}/CustomFields/Numeric:
     get:
       tags:
@@ -495,10 +495,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldNumericList'
+            $ref: "#/definitions/CustomFieldNumericList"
     post:
       tags:
         - Config
@@ -525,17 +525,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/CustomFieldNumericList'
+            $ref: "#/definitions/CustomFieldNumericList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldNumericList'
+            $ref: "#/definitions/CustomFieldNumericList"
   /{clientId}/CustomFields/SelectList:
     get:
       tags:
@@ -568,10 +568,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldSelectListList'
+            $ref: "#/definitions/CustomFieldSelectListList"
     post:
       tags:
         - Config
@@ -598,17 +598,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/CustomFieldSelectListList'
+            $ref: "#/definitions/CustomFieldSelectListList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldTextList'
+            $ref: "#/definitions/CustomFieldTextList"
   /{clientId}/CustomFields/Text:
     get:
       tags:
@@ -641,10 +641,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldTextList'
+            $ref: "#/definitions/CustomFieldTextList"
     post:
       tags:
         - Config
@@ -671,17 +671,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/CustomFieldTextList'
+            $ref: "#/definitions/CustomFieldTextList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldTextList'
+            $ref: "#/definitions/CustomFieldTextList"
   /{clientId}/EmailTypes:
     get:
       tags:
@@ -714,10 +714,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/EmailTypeEntryList'
+            $ref: "#/definitions/EmailTypeEntryList"
     post:
       tags:
         - Config
@@ -744,17 +744,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/EmailTypeEntryList'
+            $ref: "#/definitions/EmailTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/EmailTypeEntryList'
+            $ref: "#/definitions/EmailTypeEntryList"
   /{clientId}/GroupNames:
     get:
       tags:
@@ -783,10 +783,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/GroupTypeNameEntryList'
+            $ref: "#/definitions/GroupTypeNameEntryList"
   /{clientId}/GroupTypes:
     get:
       tags:
@@ -819,10 +819,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/GroupTypeEntryList'
+            $ref: "#/definitions/GroupTypeEntryList"
     post:
       tags:
         - Config
@@ -849,17 +849,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/GroupTypeEntryList'
+            $ref: "#/definitions/GroupTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/GroupTypeEntryList'
+            $ref: "#/definitions/GroupTypeEntryList"
   /{clientId}/PhoneTypes:
     get:
       tags:
@@ -892,10 +892,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/PhoneNumberTypeEntryList'
+            $ref: "#/definitions/PhoneNumberTypeEntryList"
     post:
       tags:
         - Config
@@ -922,17 +922,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/PhoneNumberTypeEntryList'
+            $ref: "#/definitions/PhoneNumberTypeEntryList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/PhoneNumberTypeEntryList'
+            $ref: "#/definitions/PhoneNumberTypeEntryList"
   /{clientId}/Picklists:
     get:
       tags:
@@ -965,10 +965,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/PicklistList'
+            $ref: "#/definitions/PicklistList"
     post:
       tags:
         - Config
@@ -995,17 +995,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/PicklistList'
+            $ref: "#/definitions/PicklistList"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/PicklistList'
+            $ref: "#/definitions/PicklistList"
   /{clientId}/Tags:
     get:
       tags:
@@ -1029,10 +1029,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/TagCountList'
+            $ref: "#/definitions/TagCountList"
   /{clientId}/UpdateRules:
     get:
       tags:
@@ -1056,10 +1056,10 @@ paths:
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/UpdateRuleList'
+            $ref: "#/definitions/UpdateRuleList"
   /{clientId}/AddressType/{typeId}:
     patch:
       tags:
@@ -1092,17 +1092,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[AddressTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[AddressTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AddressTypeEntry'
+            $ref: "#/definitions/AddressTypeEntry"
   /{clientId}/AlternateIdType/{typeId}:
     patch:
       tags:
@@ -1135,17 +1135,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[AlternateIdTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[AlternateIdTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/AlternateIdTypeEntry'
+            $ref: "#/definitions/AlternateIdTypeEntry"
   /{clientId}/ConsentType/{typeId}:
     patch:
       tags:
@@ -1178,17 +1178,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[ConsentTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[ConsentTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/ConsentTypeEntry'
+            $ref: "#/definitions/ConsentTypeEntry"
   /{clientId}/CustomerType/{typeId}:
     patch:
       tags:
@@ -1221,17 +1221,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[CustomerTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[CustomerTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomerTypeEntry'
+            $ref: "#/definitions/CustomerTypeEntry"
   /{clientId}/CustomField/DateTime/{Id}:
     patch:
       tags:
@@ -1264,17 +1264,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[CustomFieldDateTime]'
+            $ref: "#/definitions/JsonPatchDocument[CustomFieldDateTime]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldDateTime'
+            $ref: "#/definitions/CustomFieldDateTime"
   /{clientId}/CustomField/Numeric/{Id}:
     patch:
       tags:
@@ -1307,17 +1307,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[CustomFieldNumeric]'
+            $ref: "#/definitions/JsonPatchDocument[CustomFieldNumeric]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldNumeric'
+            $ref: "#/definitions/CustomFieldNumeric"
   /{clientId}/CustomField/SelectList/{Id}:
     patch:
       tags:
@@ -1350,17 +1350,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[CustomFieldSelectList]'
+            $ref: "#/definitions/JsonPatchDocument[CustomFieldSelectList]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldSelectList'
+            $ref: "#/definitions/CustomFieldSelectList"
   /{clientId}/CustomField/Text/{Id}:
     patch:
       tags:
@@ -1393,17 +1393,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[CustomFieldText]'
+            $ref: "#/definitions/JsonPatchDocument[CustomFieldText]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/CustomFieldText'
+            $ref: "#/definitions/CustomFieldText"
   /{clientId}/EmailType/{typeId}:
     patch:
       tags:
@@ -1436,17 +1436,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[EmailTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[EmailTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/EmailTypeEntry'
+            $ref: "#/definitions/EmailTypeEntry"
   /{clientId}/GroupType/{typeId}:
     patch:
       tags:
@@ -1479,17 +1479,17 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[GroupTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[GroupTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/GroupTypeEntry'
+            $ref: "#/definitions/GroupTypeEntry"
   /{clientId}/PhoneType/{typeId}:
     patch:
       tags:
@@ -1522,18 +1522,18 @@ paths:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/JsonPatchDocument[PhoneNumberTypeEntry]'
+            $ref: "#/definitions/JsonPatchDocument[PhoneNumberTypeEntry]"
         - name: Authorization
           in: header
           description: authorization token
           required: true
           type: string
       responses:
-        '200':
+        "200":
           description: OK
           schema:
-            $ref: '#/definitions/PhoneNumberTypeEntry'
- 
+            $ref: "#/definitions/PhoneNumberTypeEntry"
+
 definitions:
   AddressTypeEntryList:
     type: object
@@ -1541,7 +1541,7 @@ definitions:
       AddressTypes:
         type: array
         items:
-          $ref: '#/definitions/AddressTypeEntry'
+          $ref: "#/definitions/AddressTypeEntry"
   AddressTypeEntry:
     required:
       - TypeName
@@ -1553,7 +1553,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -1562,7 +1562,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   LocalizedField:
     required:
       - Locale
@@ -1592,7 +1592,7 @@ definitions:
       AlternateIdTypes:
         type: array
         items:
-          $ref: '#/definitions/AlternateIdTypeEntry'
+          $ref: "#/definitions/AlternateIdTypeEntry"
   AlternateIdTypeEntry:
     required:
       - TypeName
@@ -1604,7 +1604,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -1613,14 +1613,14 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   ConsentStatusList:
     type: object
     properties:
       ConsentStatus:
         type: array
         items:
-          $ref: '#/definitions/ConsentStatus'
+          $ref: "#/definitions/ConsentStatus"
   ConsentStatus:
     required:
       - Name
@@ -1637,7 +1637,7 @@ definitions:
       ConsentTypes:
         type: array
         items:
-          $ref: '#/definitions/ConsentTypeEntry'
+          $ref: "#/definitions/ConsentTypeEntry"
   ConsentTypeEntry:
     required:
       - TypeName
@@ -1654,11 +1654,11 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       Versions:
         type: array
         items:
-          $ref: '#/definitions/ConsentVersionEntry'
+          $ref: "#/definitions/ConsentVersionEntry"
   ConsentVersionEntry:
     required:
       - ConsentVersion
@@ -1670,7 +1670,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedConsentField'
+          $ref: "#/definitions/LocalizedConsentField"
       ExpirationInDays:
         format: int32
         type: integer
@@ -1682,7 +1682,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   LocalizedConsentField:
     required:
       - ConsentLanguage
@@ -1704,7 +1704,7 @@ definitions:
       CustomerTypes:
         type: array
         items:
-          $ref: '#/definitions/CustomerTypeEntry'
+          $ref: "#/definitions/CustomerTypeEntry"
   CustomerTypeEntry:
     required:
       - TypeName
@@ -1716,7 +1716,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -1725,26 +1725,26 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   CustomFields:
     type: object
     properties:
       DateTimeFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldDateTime'
+          $ref: "#/definitions/CustomFieldDateTime"
       NumericFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldNumeric'
+          $ref: "#/definitions/CustomFieldNumeric"
       SelectListFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldSelectList'
+          $ref: "#/definitions/CustomFieldSelectList"
       TextFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldText'
+          $ref: "#/definitions/CustomFieldText"
   CustomFieldDateTime:
     required:
       - Name
@@ -1761,13 +1761,13 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       Name:
         type: string
       LocalizedDisplayNames:
         type: array
         items:
-          $ref: '#/definitions/LocalizedDisplayName'
+          $ref: "#/definitions/LocalizedDisplayName"
       Description:
         type: string
       UpdateRuleId:
@@ -1797,7 +1797,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       MinValue:
         format: double
         type: number
@@ -1817,7 +1817,7 @@ definitions:
       LocalizedDisplayNames:
         type: array
         items:
-          $ref: '#/definitions/LocalizedDisplayName'
+          $ref: "#/definitions/LocalizedDisplayName"
       Description:
         type: string
       UpdateRuleId:
@@ -1849,7 +1849,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       PicklistId:
         format: int32
         maximum: 2147483647
@@ -1877,7 +1877,7 @@ definitions:
       LocalizedDisplayNames:
         type: array
         items:
-          $ref: '#/definitions/LocalizedDisplayName'
+          $ref: "#/definitions/LocalizedDisplayName"
       Description:
         type: string
       UpdateRuleId:
@@ -1907,7 +1907,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       MinLength:
         format: int32
         type: integer
@@ -1925,7 +1925,7 @@ definitions:
       LocalizedDisplayNames:
         type: array
         items:
-          $ref: '#/definitions/LocalizedDisplayName'
+          $ref: "#/definitions/LocalizedDisplayName"
       Description:
         type: string
       UpdateRuleId:
@@ -1963,35 +1963,35 @@ definitions:
       DateTimeFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldDateTime'
+          $ref: "#/definitions/CustomFieldDateTime"
   CustomFieldNumericList:
     type: object
     properties:
       NumericFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldNumeric'
+          $ref: "#/definitions/CustomFieldNumeric"
   CustomFieldSelectListList:
     type: object
     properties:
       SelectListFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldSelectList'
+          $ref: "#/definitions/CustomFieldSelectList"
   CustomFieldTextList:
     type: object
     properties:
       TextFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldText'
+          $ref: "#/definitions/CustomFieldText"
   EmailTypeEntryList:
     type: object
     properties:
       EmailTypes:
         type: array
         items:
-          $ref: '#/definitions/EmailTypeEntry'
+          $ref: "#/definitions/EmailTypeEntry"
   EmailTypeEntry:
     required:
       - TypeName
@@ -2003,7 +2003,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -2012,14 +2012,14 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   GroupTypeNameEntryList:
     type: object
     properties:
       GroupTypeNames:
         type: array
         items:
-          $ref: '#/definitions/GroupTypeNameEntry'
+          $ref: "#/definitions/GroupTypeNameEntry"
   GroupTypeNameEntry:
     required:
       - GroupType
@@ -2033,7 +2033,7 @@ definitions:
       GroupNames:
         type: array
         items:
-          $ref: '#/definitions/GroupName'
+          $ref: "#/definitions/GroupName"
   GroupName:
     type: object
     properties:
@@ -2045,7 +2045,7 @@ definitions:
       GroupTypes:
         type: array
         items:
-          $ref: '#/definitions/GroupTypeEntry'
+          $ref: "#/definitions/GroupTypeEntry"
   GroupTypeEntry:
     required:
       - TypeName
@@ -2057,7 +2057,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -2066,14 +2066,14 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   PhoneNumberTypeEntryList:
     type: object
     properties:
       PhoneTypes:
         type: array
         items:
-          $ref: '#/definitions/PhoneNumberTypeEntry'
+          $ref: "#/definitions/PhoneNumberTypeEntry"
   PhoneNumberTypeEntry:
     required:
       - TypeName
@@ -2085,7 +2085,7 @@ definitions:
       LocalizedFields:
         type: array
         items:
-          $ref: '#/definitions/LocalizedField'
+          $ref: "#/definitions/LocalizedField"
       IsDefault:
         type: boolean
       IsActive:
@@ -2094,14 +2094,14 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
   PicklistList:
     type: object
     properties:
       Picklists:
         type: array
         items:
-          $ref: '#/definitions/Picklist'
+          $ref: "#/definitions/Picklist"
   Picklist:
     required:
       - Name
@@ -2112,7 +2112,7 @@ definitions:
         format: int32
         type: integer
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       Name:
         type: string
       Description:
@@ -2122,7 +2122,7 @@ definitions:
       FieldSelectOptions:
         type: array
         items:
-          $ref: '#/definitions/FieldSelectOption'
+          $ref: "#/definitions/FieldSelectOption"
   FieldSelectOption:
     required:
       - LocalizedFieldSelectOptions
@@ -2132,7 +2132,7 @@ definitions:
       LocalizedFieldSelectOptions:
         type: array
         items:
-          $ref: '#/definitions/LocalizedFieldSelectOption'
+          $ref: "#/definitions/LocalizedFieldSelectOption"
       Value:
         type: string
       DisplayOrder:
@@ -2160,12 +2160,12 @@ definitions:
       TagCounts:
         type: array
         items:
-          $ref: '#/definitions/TagCount'
+          $ref: "#/definitions/TagCount"
   TagCount:
     type: object
     properties:
       Tag:
-        $ref: '#/definitions/Tag'
+        $ref: "#/definitions/Tag"
       Count:
         format: int32
         type: integer
@@ -2187,7 +2187,7 @@ definitions:
       UpdateRules:
         type: array
         items:
-          $ref: '#/definitions/UpdateRule'
+          $ref: "#/definitions/UpdateRule"
   UpdateRule:
     type: object
     properties:
@@ -2202,7 +2202,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[AddressTypeEntry]'
+          $ref: "#/definitions/Operation[AddressTypeEntry]"
         readOnly: true
   Operation[AddressTypeEntry]:
     type: object
@@ -2221,7 +2221,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[AlternateIdTypeEntry]'
+          $ref: "#/definitions/Operation[AlternateIdTypeEntry]"
         readOnly: true
   Operation[AlternateIdTypeEntry]:
     type: object
@@ -2240,7 +2240,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[ConsentTypeEntry]'
+          $ref: "#/definitions/Operation[ConsentTypeEntry]"
         readOnly: true
   Operation[ConsentTypeEntry]:
     type: object
@@ -2259,7 +2259,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[CustomerTypeEntry]'
+          $ref: "#/definitions/Operation[CustomerTypeEntry]"
         readOnly: true
   Operation[CustomerTypeEntry]:
     type: object
@@ -2278,7 +2278,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[CustomFieldDateTime]'
+          $ref: "#/definitions/Operation[CustomFieldDateTime]"
         readOnly: true
   Operation[CustomFieldDateTime]:
     type: object
@@ -2297,7 +2297,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[CustomFieldNumeric]'
+          $ref: "#/definitions/Operation[CustomFieldNumeric]"
         readOnly: true
   Operation[CustomFieldNumeric]:
     type: object
@@ -2316,7 +2316,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[CustomFieldSelectList]'
+          $ref: "#/definitions/Operation[CustomFieldSelectList]"
         readOnly: true
   Operation[CustomFieldSelectList]:
     type: object
@@ -2335,7 +2335,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[CustomFieldText]'
+          $ref: "#/definitions/Operation[CustomFieldText]"
         readOnly: true
   Operation[CustomFieldText]:
     type: object
@@ -2354,7 +2354,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[EmailTypeEntry]'
+          $ref: "#/definitions/Operation[EmailTypeEntry]"
         readOnly: true
   Operation[EmailTypeEntry]:
     type: object
@@ -2373,7 +2373,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[GroupTypeEntry]'
+          $ref: "#/definitions/Operation[GroupTypeEntry]"
         readOnly: true
   Operation[GroupTypeEntry]:
     type: object
@@ -2392,7 +2392,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[PhoneNumberTypeEntry]'
+          $ref: "#/definitions/Operation[PhoneNumberTypeEntry]"
         readOnly: true
   Operation[PhoneNumberTypeEntry]:
     type: object
@@ -2411,7 +2411,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[Picklist]'
+          $ref: "#/definitions/Operation[Picklist]"
         readOnly: true
   Operation[Picklist]:
     type: object
@@ -2494,14 +2494,14 @@ definitions:
       FailedRecords:
         type: array
         items:
-          $ref: '#/definitions/BulkUserProfilePreferenceException'
+          $ref: "#/definitions/BulkUserProfilePreferenceException"
   BulkUserProfilePreferenceException:
     type: object
     properties:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       ProfileId:
         format: int32
         type: integer
@@ -2518,43 +2518,43 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       Consents:
         type: array
         items:
-          $ref: '#/definitions/BulkCustomerConsent'
+          $ref: "#/definitions/BulkCustomerConsent"
       ProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkProfilePreference'
+          $ref: "#/definitions/BulkProfilePreference"
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/BulkAlternateIdEntry'
+          $ref: "#/definitions/BulkAlternateIdEntry"
       Addresses:
         type: array
         items:
-          $ref: '#/definitions/BulkAddressPreference'
+          $ref: "#/definitions/BulkAddressPreference"
       PhoneNumbers:
         type: array
         items:
-          $ref: '#/definitions/BulkPhoneNumberPreference'
+          $ref: "#/definitions/BulkPhoneNumberPreference"
       Emails:
         type: array
         items:
-          $ref: '#/definitions/BulkEmailPreference'
+          $ref: "#/definitions/BulkEmailPreference"
       Groups:
         type: array
         items:
-          $ref: '#/definitions/BulkGroupEntry'
+          $ref: "#/definitions/BulkGroupEntry"
       ProfileTags:
         type: array
         items:
-          $ref: '#/definitions/BulkTag'
+          $ref: "#/definitions/BulkTag"
       CustomFields:
         type: array
         items:
-          $ref: '#/definitions/BulkCustomFieldValue'
+          $ref: "#/definitions/BulkCustomFieldValue"
   ExceptionsDefinition:
     type: object
     properties:
@@ -2588,7 +2588,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       ConsentType:
         type: string
       ConsentVersion:
@@ -2612,7 +2612,7 @@ definitions:
       SourceId:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       UpdatedVersionPending:
         type: boolean
       IsActive:
@@ -2637,7 +2637,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       ProgramId:
         type: string
       ChannelId:
@@ -2645,7 +2645,7 @@ definitions:
       ConsentAssociations:
         type: array
         items:
-          $ref: '#/definitions/ConsentAssociation'
+          $ref: "#/definitions/ConsentAssociation"
       MatchType:
         type: string
       ReasonCode:
@@ -2673,7 +2673,7 @@ definitions:
       PreferenceAttributes:
         type: array
         items:
-          $ref: '#/definitions/PreferenceAttribute'
+          $ref: "#/definitions/PreferenceAttribute"
       CustomerDate:
         type: string
       DropReasonNbr:
@@ -2698,7 +2698,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       AlternateIdType:
         type: string
       AlternateId:
@@ -2706,7 +2706,7 @@ definitions:
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       AlternateIdTypeLink:
         format: int32
         type: integer
@@ -2721,11 +2721,11 @@ definitions:
       AddressPreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkProfilePreference'
+          $ref: "#/definitions/BulkProfilePreference"
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       AddressType:
         type: string
       IsActive:
@@ -2735,7 +2735,7 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       CassAddress1:
         type: string
       CassAddress2:
@@ -2751,7 +2751,7 @@ definitions:
       Country:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       CountryTypeNbr:
         format: int32
         type: integer
@@ -2806,11 +2806,11 @@ definitions:
       PhonePreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkProfilePreference'
+          $ref: "#/definitions/BulkProfilePreference"
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       PhoneType:
         type: string
       PhoneNumber:
@@ -2823,13 +2823,13 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       IsMobile:
         type: boolean
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsModified:
         type: boolean
       PhoneTypeLink:
@@ -2849,11 +2849,11 @@ definitions:
       EmailPreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkProfilePreference'
+          $ref: "#/definitions/BulkProfilePreference"
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       EmailAddressType:
         type: string
       EmailAddress:
@@ -2863,11 +2863,11 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsModified:
         type: boolean
       EmailTypeLink:
@@ -2887,7 +2887,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       GroupType:
         type: string
       IsPrimary:
@@ -2895,7 +2895,7 @@ definitions:
       GroupName:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsActive:
         type: boolean
       GroupIdTypeLink:
@@ -2912,7 +2912,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       Name:
         type: string
       IsActive:
@@ -2928,7 +2928,7 @@ definitions:
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
       Name:
         type: string
       Value:
@@ -2936,7 +2936,7 @@ definitions:
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       CustomFieldLink:
         format: int32
         type: integer
@@ -3001,7 +3001,7 @@ definitions:
       SourceId:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       UpdatedVersionPending:
         type: boolean
       IsActive:
@@ -3136,7 +3136,7 @@ definitions:
       UserProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkUserProfilePreference'
+          $ref: "#/definitions/BulkUserProfilePreference"
   BulkUserProfilePreference:
     type: object
     properties:
@@ -3156,61 +3156,61 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       Consents:
         type: array
         items:
-          $ref: '#/definitions/BulkCustomerConsent'
+          $ref: "#/definitions/BulkCustomerConsent"
       ProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/BulkProfilePreference'
+          $ref: "#/definitions/BulkProfilePreference"
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/BulkAlternateIdEntry'
+          $ref: "#/definitions/BulkAlternateIdEntry"
       Addresses:
         type: array
         items:
-          $ref: '#/definitions/BulkAddressPreference'
+          $ref: "#/definitions/BulkAddressPreference"
       PhoneNumbers:
         type: array
         items:
-          $ref: '#/definitions/BulkPhoneNumberPreference'
+          $ref: "#/definitions/BulkPhoneNumberPreference"
       Emails:
         type: array
         items:
-          $ref: '#/definitions/BulkEmailPreference'
+          $ref: "#/definitions/BulkEmailPreference"
       Groups:
         type: array
         items:
-          $ref: '#/definitions/BulkGroupEntry'
+          $ref: "#/definitions/BulkGroupEntry"
       ProfileTags:
         type: array
         items:
-          $ref: '#/definitions/BulkTag'
+          $ref: "#/definitions/BulkTag"
       CustomFields:
         type: array
         items:
-          $ref: '#/definitions/BulkCustomFieldValue'
+          $ref: "#/definitions/BulkCustomFieldValue"
       Exceptions:
         type: array
         items:
-          $ref: '#/definitions/ExceptionsDefinition'
+          $ref: "#/definitions/ExceptionsDefinition"
   ConsentHistory:
     type: object
     properties:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       ProfileId:
         format: int32
         type: integer
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       RegistrationConfirmed:
         type: boolean
       CustomerType:
@@ -3220,7 +3220,7 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       DefaultLocale:
         type: string
       UpdateStatus:
@@ -3230,7 +3230,7 @@ definitions:
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/AlternateIdEntry'
+          $ref: "#/definitions/AlternateIdEntry"
   AlternateIdEntry:
     required:
       - AlternateId
@@ -3243,7 +3243,7 @@ definitions:
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       AlternateIdTypeLink:
         format: int32
         type: integer
@@ -3253,14 +3253,14 @@ definitions:
       CustomFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldValue'
+          $ref: "#/definitions/CustomFieldValue"
       ProfileId:
         format: int32
         type: integer
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       RegistrationConfirmed:
         type: boolean
       CustomerType:
@@ -3270,7 +3270,7 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       DefaultLocale:
         type: string
       UpdateStatus:
@@ -3280,7 +3280,7 @@ definitions:
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/AlternateIdEntry'
+          $ref: "#/definitions/AlternateIdEntry"
   CustomFieldValue:
     required:
       - Name
@@ -3293,7 +3293,7 @@ definitions:
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       CustomFieldLink:
         format: int32
         type: integer
@@ -3303,26 +3303,26 @@ definitions:
       Addresses:
         type: array
         items:
-          $ref: '#/definitions/AddressPreference'
+          $ref: "#/definitions/AddressPreference"
       Emails:
         type: array
         items:
-          $ref: '#/definitions/EmailPreference'
+          $ref: "#/definitions/EmailPreference"
       PhoneNumbers:
         type: array
         items:
-          $ref: '#/definitions/PhoneNumberPreference'
+          $ref: "#/definitions/PhoneNumberPreference"
       ProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/ProfilePreference'
+          $ref: "#/definitions/ProfilePreference"
       ProfileId:
         format: int32
         type: integer
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       RegistrationConfirmed:
         type: boolean
       CustomerType:
@@ -3332,7 +3332,7 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       DefaultLocale:
         type: string
       UpdateStatus:
@@ -3342,7 +3342,7 @@ definitions:
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/AlternateIdEntry'
+          $ref: "#/definitions/AlternateIdEntry"
   AddressPreference:
     required:
       - Address1
@@ -3354,7 +3354,7 @@ definitions:
       AddressPreferences:
         type: array
         items:
-          $ref: '#/definitions/ProfilePreference'
+          $ref: "#/definitions/ProfilePreference"
       AddressType:
         type: string
       IsActive:
@@ -3364,7 +3364,7 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       CassAddress1:
         type: string
       CassAddress2:
@@ -3380,7 +3380,7 @@ definitions:
       Country:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       CountryTypeNbr:
         format: int32
         type: integer
@@ -3435,7 +3435,7 @@ definitions:
       EmailPreferences:
         type: array
         items:
-          $ref: '#/definitions/ProfilePreference'
+          $ref: "#/definitions/ProfilePreference"
       EmailAddressType:
         type: string
       EmailAddress:
@@ -3445,11 +3445,11 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsModified:
         type: boolean
       EmailTypeLink:
@@ -3469,7 +3469,7 @@ definitions:
       PhonePreferences:
         type: array
         items:
-          $ref: '#/definitions/ProfilePreference'
+          $ref: "#/definitions/ProfilePreference"
       PhoneType:
         type: string
       PhoneNumber:
@@ -3482,13 +3482,13 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       IsMobile:
         type: boolean
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsModified:
         type: boolean
       PhoneTypeLink:
@@ -3513,7 +3513,7 @@ definitions:
       ConsentAssociations:
         type: array
         items:
-          $ref: '#/definitions/ConsentAssociation'
+          $ref: "#/definitions/ConsentAssociation"
       MatchType:
         type: string
       ReasonCode:
@@ -3541,7 +3541,7 @@ definitions:
       PreferenceAttributes:
         type: array
         items:
-          $ref: '#/definitions/PreferenceAttribute'
+          $ref: "#/definitions/PreferenceAttribute"
       CustomerDate:
         type: string
       DropReasonNbr:
@@ -3564,42 +3564,42 @@ definitions:
       Consents:
         type: array
         items:
-          $ref: '#/definitions/CustomerConsent'
+          $ref: "#/definitions/CustomerConsent"
       CustomFields:
         type: array
         items:
-          $ref: '#/definitions/CustomFieldValue'
+          $ref: "#/definitions/CustomFieldValue"
       Groups:
         type: array
         items:
-          $ref: '#/definitions/GroupEntry'
+          $ref: "#/definitions/GroupEntry"
       ProfileTags:
         type: array
         items:
-          $ref: '#/definitions/Tag'
+          $ref: "#/definitions/Tag"
       Addresses:
         type: array
         items:
-          $ref: '#/definitions/AddressPreference'
+          $ref: "#/definitions/AddressPreference"
       Emails:
         type: array
         items:
-          $ref: '#/definitions/EmailPreference'
+          $ref: "#/definitions/EmailPreference"
       PhoneNumbers:
         type: array
         items:
-          $ref: '#/definitions/PhoneNumberPreference'
+          $ref: "#/definitions/PhoneNumberPreference"
       ProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/ProfilePreference'
+          $ref: "#/definitions/ProfilePreference"
       ProfileId:
         format: int32
         type: integer
       IsActive:
         type: boolean
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       RegistrationConfirmed:
         type: boolean
       CustomerType:
@@ -3609,7 +3609,7 @@ definitions:
       PreservePreferences:
         type: boolean
       CustomerName:
-        $ref: '#/definitions/CustomerName'
+        $ref: "#/definitions/CustomerName"
       DefaultLocale:
         type: string
       UpdateStatus:
@@ -3619,7 +3619,7 @@ definitions:
       AlternateIds:
         type: array
         items:
-          $ref: '#/definitions/AlternateIdEntry'
+          $ref: "#/definitions/AlternateIdEntry"
   GroupEntry:
     required:
       - GroupName
@@ -3632,7 +3632,7 @@ definitions:
       GroupName:
         type: string
       Edited:
-        $ref: '#/definitions/EditInfo'
+        $ref: "#/definitions/EditInfo"
       IsActive:
         type: boolean
       GroupIdTypeLink:
@@ -3651,19 +3651,19 @@ definitions:
       PhoneNumbers:
         type: array
         items:
-          $ref: '#/definitions/ArchivePhoneNumberPreference'
+          $ref: "#/definitions/ArchivePhoneNumberPreference"
       Addresses:
         type: array
         items:
-          $ref: '#/definitions/ArchiveAddressPreference'
+          $ref: "#/definitions/ArchiveAddressPreference"
       Emails:
         type: array
         items:
-          $ref: '#/definitions/ArchiveEmailPreference'
+          $ref: "#/definitions/ArchiveEmailPreference"
       ProfilePreferences:
         type: array
         items:
-          $ref: '#/definitions/ArchiveProfilePreference'
+          $ref: "#/definitions/ArchiveProfilePreference"
   ArchivePhoneNumberPreference:
     type: object
     properties:
@@ -3731,7 +3731,7 @@ definitions:
       Operations:
         type: array
         items:
-          $ref: '#/definitions/Operation[UserProfilePreference]'
+          $ref: "#/definitions/Operation[UserProfilePreference]"
         readOnly: true
   Operation[UserProfilePreference]:
     type: object
